@@ -1,5 +1,7 @@
 # needed since we skip the main jsoncpp cmake file that defines this
 set(ARCHIVE_INSTALL_DIR lib)
+set(BUILD_SHARED_LIBS ON)
+set(PROJECT_NAME "jsoncpp")
 add_subdirectory(${at_media_deps_dir}/jsoncpp/src ${at_media_deps_dir}/jsoncpp/src)
 set(jsoncpp_includes ${at_media_deps_dir}/jsoncpp/include)
 target_include_directories(jsoncpp_lib PUBLIC ${jsoncpp_includes})
